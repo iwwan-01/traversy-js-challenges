@@ -9,8 +9,13 @@ function validAnagrams(str1, str2) {
     return acc;
   }, {});
 
-  return Object.keys(freqCount1).every(
-    (char) => freqCount1[char] === freqCount2[char]
+  return (
+    Object.keys(freqCount1).every(
+      (char) => freqCount1[char] === freqCount2[char]
+    ) &&
+    Object.keys(freqCount2).every(
+      (char) => freqCount1[char] === freqCount2[char]
+    )
   );
 }
 
