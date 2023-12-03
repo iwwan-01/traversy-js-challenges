@@ -94,7 +94,6 @@ DoublyLinkedList.prototype.remove = function (index) {
     if (this.head) {
       this.head.prev = null;
     } else {
-      /// ???
       this.tail = null;
     }
   } else if (index === this.length - 1) {
@@ -103,7 +102,6 @@ DoublyLinkedList.prototype.remove = function (index) {
     if (this.tail) {
       this.tail.next = null;
     } else {
-      // ???
       this.head = null;
     }
   } else {
